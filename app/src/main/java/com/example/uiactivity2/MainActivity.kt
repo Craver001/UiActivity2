@@ -1,21 +1,24 @@
 package com.example.uiactivity2
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import com.example.uiactivity2.databinding.ActivityMainBinding
-import com.example.uiactivity2.databinding.ApplicationBinding
-import com.example.uiactivity2.databinding.EmploymentApplicationBinding
+import com.example.uiactivity2.databinding.FirstPageBinding
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var binding: EmploymentApplicationBinding
+    lateinit var binding: FirstPageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = EmploymentApplicationBinding.inflate(layoutInflater)
+        binding = FirstPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.next.setOnClickListener {
+            val intent = Intent(this@MainActivity,Page2::class.java)
+            startActivity(intent)
+
+        }
 
 
     }

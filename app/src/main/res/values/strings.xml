@@ -2,6 +2,13 @@
     <string name="app_name">UiActivity2</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+    <string name="yes1">I certify that all answers given herein are true and complete to the best of my knowledge.
+</string>
+    <string name="yes2">I authorize investigation of all statements contained in this application for employement as may necessary in arriving at an employment decision.
+</string>
+    <string name="yes3">In the event of employment, I understand that false or misleading information given in my application or interview may result in discharge.
+</string>
+
 
 
 </resources>
